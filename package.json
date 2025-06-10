@@ -10,7 +10,7 @@
     "dashboard",
     "design"
   ],
-  "homepage": "https://github.com/navish/breeders-dash#readme",
+  "homepage": "/",
   "bugs": {
     "url": "https://github.com/navish/breeders-dash/issues"
   },
@@ -21,7 +21,7 @@
   "license": "ISC",
   "author": "Nancy Victor",
   "type": "module",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "test": "npm test",
     "start": "react-scripts start",
