@@ -1,0 +1,28 @@
+{
+  "name": "breeders-dash-builder",
+  "version": "1.0.0",
+  "description": "Testing builder.io code generator using a design from Figma",
+  "keywords": [
+    "builder.io",
+    "figma",
+    "code",
+    "generator",
+    "dashboard",
+    "design"
+  ],
+  "homepage": "https://github.com/navish/breeders-dash#readme",
+  "bugs": {
+    "url": "https://github.com/navish/breeders-dash/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navish/breeders-dash.git"
+  },
+  "license": "ISC",
+  "author": "Nancy Victor",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  }
+}
