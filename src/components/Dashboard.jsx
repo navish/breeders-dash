@@ -1,10 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { useState } from "react";
 import TopBar from "./TopBar";
 import FilterSection from "./FilterSection";
 import TrialCard from "./TrialCard";
+import TrialDetailView from "./TrialDetailView";
 
 const Dashboard = () => {
+  const [selectedTrial, setSelectedTrial] = useState(null);
+
   const trialsData = [
     {
       id: 1,
@@ -36,6 +40,20 @@ const Dashboard = () => {
     },
   ];
 
+  const handleTrialSelect = (trial) => {
+    setSelectedTrial(trial);
+  };
+
+  const handleBackToDashboard = () => {
+    setSelectedTrial(null);
+  };
+
+  if (selectedTrial) {
+    return (
+      <TrialDetailView trial={selectedTrial} onBack={handleBackToDashboard} />
+    );
+  }
+
   return (
     <div css={dashboardContainerStyles}>
       <TopBar />
@@ -48,6 +66,7 @@ const Dashboard = () => {
             site={trial.site}
             location={trial.location}
             status={trial.status}
+            onClick={() => handleTrialSelect(trial)}
           />
         ))}
       </div>

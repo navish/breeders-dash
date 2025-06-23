@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
-const TrialCard = ({ trialName, site, location, status }) => {
+const TrialCard = ({ trialName, site, location, status, onClick }) => {
   return (
-    <div css={trialCardStyles}>
+    <div css={trialCardStyles} onClick={onClick}>
       <div css={cardContentStyles}>
         <div css={trialNameStyles}>{trialName}</div>
         <div css={fieldRowStyles}>
